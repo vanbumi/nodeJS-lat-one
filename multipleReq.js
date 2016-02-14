@@ -1,3 +1,5 @@
+//Multiple Request with set out time
+
 //1st function
 function placeAnOrder(orderNumber) {
   console.log("Customer Order:", orderNumber);
@@ -16,7 +18,7 @@ function cookAndDeliver(callAway) {
     setTimeout(callAway, 3000);
 };
 
-//print out
+//to print out on console
 placeAnOrder(1);
 placeAnOrder(2);
 placeAnOrder(3);
