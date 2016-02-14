@@ -4,7 +4,7 @@
 
 	//1st function
 
-	function placeAnOrder(orderNumber) {
+		function placeAnOrder(orderNumber) {
 
   		console.log("Customer Order:", orderNumber);
 
@@ -14,16 +14,16 @@
 
      	 		console.log("Delivered food order:", orderNumber);
 
- 	 	});
-	};
+ 		 	});
+		};
 
 		//this is sample how to print out
 	
-		placeAnOrder(1);
+			placeAnOrder(1);
 
 	//2nd function and set the time out
 	
-	function cookAndDeliver(callAway) {
+		function cookAndDeliver(callAway) {
    		
 		setTimeout(callAway, 3000);
 
