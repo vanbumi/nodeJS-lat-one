@@ -6,13 +6,13 @@
 
 		function placeAnOrder(orderNumber) {
 
-  		console.log("Customer Order:", orderNumber);
+  			console.log("Customer Order:", orderNumber);
 
   		//after you create 2nd function you write 2nd function here
 
  	 	cookAndDeliver(function() {
 
-     	 		console.log("Delivered food order:", orderNumber);
+     	 	console.log("Delivered food order:", orderNumber);
 
  		 	});
 		};
@@ -25,9 +25,9 @@
 	
 		function cookAndDeliver(callAway) {
    		
-		setTimeout(callAway, 3000);
-
-	};
+			setTimeout(callAway, 3000);
+		
+		};
 
 	//to print out on console
 	
