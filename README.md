@@ -5,15 +5,19 @@
 	//1st function
 
 	function placeAnOrder(orderNumber) {
+
   		console.log("Customer Order:", orderNumber);
 
   		//after you create 2nd function you write 2nd function here
+
  	 	cookAndDeliver(function() {
+
      	 		console.log("Delivered food order:", orderNumber);
+
  	 	});
 	};
 
-	//this is sample how to print out
+		//this is sample how to print out
 	
 		placeAnOrder(1);
 
