@@ -1,35 +1,35 @@
 # Node JS Lat One
 
-- Multiple Request with set out time
+#### Multiple Request with set out time
 
-	//1st function
+1st function
 
-		function placeAnOrder(orderNumber) {
+	function placeAnOrder(orderNumber) {
 
-  			console.log("Customer Order:", orderNumber);
+		console.log("Customer Order:", orderNumber);
 
-  		//after you create 2nd function you write 2nd function here
+		//after you create 2nd function you write 2nd function here
 
- 	 	cookAndDeliver(function() {
+	 	cookAndDeliver(function() {
 
-     	 	console.log("Delivered food order:", orderNumber);
+ 	 	console.log("Delivered food order:", orderNumber);
 
- 		 	});
-		};
+	 	});
+	};
 
-		//this is sample how to print out
+This is sample how to print out
 	
-			placeAnOrder(1);
+	placeAnOrder(1);
 
-	//2nd function and set the time out
+2nd function and set the time out
 	
-		function cookAndDeliver(callAway) {
-   		
-			setTimeout(callAway, 3000);
+	function cookAndDeliver(callAway) {
 		
-		};
+		setTimeout(callAway, 3000);
+	
+	};
 
-	//to print out on console
+To print out on console
 	
 	placeAnOrder(1);
 
@@ -43,3 +43,24 @@
 
 	placeAnOrder(6);
 	
+#### References to Object
+
+	var SomeOne = {
+	    favFood: "Nasi Goreng",
+	    favDrink: "Jahe Cola"
+	};
+
+	var Person = SomeOne;
+
+	Person.favFood = "Gulai";
+	Person.favDrink = "Bandrex";
+
+	console.log("What his fav food? " + Person.favFood);
+	console.log("What his fav drink? " + Person.favDrink);
+
+#### Two and Three Equal sign, what the diff??
+
+	console.log(19 == '19'); // true
+
+	console.log(19 === '19'); // false
+
