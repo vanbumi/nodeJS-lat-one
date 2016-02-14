@@ -1,4 +1,4 @@
-# Node JS Lat One
+# NodeJS Lat One
 
 #### Multiple Request with set out time
 
@@ -64,3 +64,22 @@ To print out on console
 
 	console.log(19 === '19'); // false
 
+#### This
+
+##### this with object
+
+	var Person = {
+	    printFirstName: function () {
+	        console.log("My name is Dyo");
+	        console.log(this === Person); // true
+	    }
+	};
+	Person.printFirstName();
+
+##### sample this "global"
+
+	function doSomething() {
+	    console.log("Do something good");
+	    console.log(this === global);
+	};
+	doSomething();
